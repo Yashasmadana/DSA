@@ -7,7 +7,7 @@ void heapify(int arr[], int n, int i) {
     if (r < n && arr[r] > arr[largest]) largest = r;
     if (largest != i) swap(arr[i], arr[largest]), heapify(arr, n, largest);
 }
-/// this one u have to go through 
+/// this one u have to go through (swap+delete)
 void heapSort(int arr[], int n) {
  
     for (int i = n - 1; i >= 0; i--) {
